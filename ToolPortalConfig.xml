@@ -1,0 +1,264 @@
+<VloConfig>
+	<!-- VLO configuration for tool portal -->
+   
+    <deleteAllFirst>false</deleteAllFirst>
+    
+    <maxDaysInSolr>100</maxDaysInSolr>
+
+    <!-- Authentication for Solr server -->
+    <!-- Read-only user (e.g. for Webapp) -->
+    <solrUserReadOnly>docker_user_read</solrUserReadOnly>
+    <solrUserReadOnlyPass>docker_secret</solrUserReadOnlyPass>
+
+    <!-- Local -->
+    <solrUrl>http://localhost:8183/solr/vlo-index/</solrUrl>
+    <solrUserReadWrite>docker_user_rw</solrUserReadWrite>
+    <solrUserReadWritePass>docker_secret</solrUserReadWritePass>
+ 
+ 	<!-- End local -->
+ 
+	 <!-- Alpha -->
+   
+<!-- 
+    <solrUrl>https://alpha-vlo.clarin.eu/solr/vlo-index/</solrUrl>
+    <solrUserReadWrite>user_admin</solrUserReadWrite>
+    <solrUserReadWritePass>4dm1n_s0_s3cr3t</solrUserReadWritePass>
+ -->
+
+	<!-- End alpha -->
+    
+    <homeUrl>http://www.clarin.eu/vlo</homeUrl>
+    
+    <helpUrl>http://www.clarin.eu/vlo</helpUrl>
+
+    <xi:include href="dataroots-toolportal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+        
+    <fileProcessingThreads>-1</fileProcessingThreads>
+    
+    <solrThreads>2</solrThreads>
+    
+    <!-- Sets the maximum number of page instances which will be stored in the application scoped second level cache for faster retrieval -->
+    <pagesInApplicationCache>40</pagesInApplicationCache>
+
+    <!-- Wicket: the maximum size (in KILOBYTES) of the File where page instances 
+    per session are stored. -->
+    <sessionCacheSize>10000</sessionCacheSize>
+
+    <maxDocsInList>1024</maxDocsInList>
+
+    <minDocsInSolrQueue>1024</minDocsInSolrQueue>
+
+    <solrTimeOut>300</solrTimeOut>
+    
+    <vloExposureEnabled>false</vloExposureEnabled>
+    <maxFileSize>50000000</maxFileSize>
+
+    <useHandleResolver>false</useHandleResolver>
+
+    <printMapping>false</printMapping>
+
+    <!-- leave empty to use default packaged definition -->
+    <facetConceptsFile>file:/Users/twagoo/git/VLO-mapping/mapping/facetConcepts.xml</facetConceptsFile>
+    
+    <facetsConfigFile>file:/Users/twagoo/git/VLO-mapping/config/facetsConfiguration.xml</facetsConfigFile>
+<!--    <facetsConfigFile>file:/Users/twagoo/vlo/facetsConfiguration.xml</facetsConfigFile> -->
+
+    <profileSchemaUrl>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/profiles/{PROFILE_ID}/xsd</profileSchemaUrl>
+
+    <componentRegistryRESTURL>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/profiles/</componentRegistryRESTURL>
+
+    <handleServerUrl>http://hdl.handle.net/</handleServerUrl>
+
+    <conceptRegistryUrl>https://concepts.clarin.eu/ccr/api/find-concepts</conceptRegistryUrl>
+
+    <vocabularyRegistryUrl>http://clavas.clarin.eu/clavas/public/api/find-concepts</vocabularyRegistryUrl>
+
+    <nationalProjectMapping>file:/Users/twagoo/git/VLO-mapping/uniform-maps/nationalProjectsMapping.xml</nationalProjectMapping>
+    
+    <organisationNamesUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/OrganisationControlledVocabulary.xml</organisationNamesUrl>
+    
+    <languageNameVariantsUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LanguageNameVariantsMap.xml</languageNameVariantsUrl>
+    
+    <licenseAvailabilityMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseAvailabilityMap.xml</licenseAvailabilityMapUrl>
+    
+    <resourceClassMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/resourceTypeMap.xml</resourceClassMapUrl>
+    
+    <licenseURIMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseURIMap.xml</licenseURIMapUrl>   
+
+    <licenseTypeMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseTypeMap.xml</licenseTypeMapUrl>   
+
+    <crossFacetMapUrl>file:/Users/twagoo/git/VLO-mapping/mapping/cfm/CrossFacetMappings.xml</crossFacetMapUrl> <!-- bundled resource: /uniform-maps/CrossFacetMap.xml -->
+
+<!--     <valueMappingsFile>file:/Users/twagoo/git/VLO-mapping/value-maps/dist/master.xml</valueMappingsFile> -->
+    <valueMappingsFile>/vlo-mapping/value-maps/dist/master.xml</valueMappingsFile>
+
+    <fields>
+        <field key="NAME">name</field>
+        <field key="CREATOR">creator</field>
+        <field key="DESCRIPTION">description</field>
+        <field key="COLLECTION">collection</field>
+        <field key="LANGUAGE_CODE">languageCode</field>
+        <field key="LANGUAGE_COUNT">_languageCount</field>
+        <field key="MODALITY">modality</field>
+        <field key="CONTINENT">continent</field>
+        <field key="COUNTRY">country</field>
+        <field key="GENRE">genre</field>
+        <field key="SUBJECT">subject</field>
+        <field key="ORGANISATION">organisation</field>
+        <field key="LICENSE">license</field>
+        <field key="LICENSE_TYPE">licenseType</field>
+        <field key="AVAILABILITY">availability</field>
+        <field key="ACCESS_INFO">accessInfo</field>
+        <field key="KEYWORDS">keywords</field>
+        <field key="MULTILINGUAL">multilingual</field>
+        <field key="NATIONAL_PROJECT">nationalProject</field>
+        <field key="RESOURCE_CLASS">resourceClass</field>
+        <field key="RESOURCE">_resourceRef</field>
+        <field key="SELF_LINK">_selfLink</field>
+        <field key="NORMALIZED_SELF_LINK">_normalizedSelfLink</field>
+        <field key="ID">id</field>
+        <field key="HARVESTER_ROOT">_harvesterRoot</field>
+        <field key="DATA_PROVIDER">dataProvider</field>
+        <field key="FILENAME">_fileName</field>
+        <field key="METADATA_DIRECTORY">_metadataDirectory</field>
+        <field key="FORMAT">format</field>
+        <field key="LANDINGPAGE">_landingPageRef</field>
+        <field key="SEARCHPAGE">_searchPageRef</field>
+        <field key="SEARCH_SERVICE">_contentSearchRef</field>
+        <field key="LAST_SEEN">_lastSeen</field>
+        <field key="CLARIN_PROFILE">_componentProfile</field>
+        <field key="CLARIN_PROFILE_ID">_componentProfileId</field>
+        <field key="HIERARCHY_WEIGHT">_hierarchyWeight</field>
+        <field key="HAS_PART">_hasPart</field>
+        <field key="HAS_PART_COUNT">_hasPartCount</field>
+        <field key="RESOURCE_COUNT">_resourceRefCount</field>
+        <field key="IS_PART_OF">_isPartOf</field>
+        <field key="SOLR_SCORE">score</field>
+        <field key="COMPLETE_METADATA">metadataSource</field>
+        <field key="PROJECT_NAME">projectName</field>
+        <field key="TEMPORAL_COVERAGE">temporalCoverage</field>
+        <field key="TEMPORAL_COVERAGE_START">temporalCoverage_s</field>
+        <field key="TEMPORAL_COVERAGE_END">temporalCoverage_e</field>
+        <field key="DAYS_SINCE_LAST_SEEN">_daysSinceLastSeen</field>
+        <field key="HAS_PART_COUNT_WEIGHT">_hasPartCountWeight</field>
+        <field key="LANGUAGE_NAME">_languageName</field>
+        <field key="OAI_ENDPOINT_URI">_oaiEndpointURI</field>
+        <field key="SIGNATURE">_signature</field>
+        <field key="RECORD_PID">recordPid</field>
+        <field key="RESOURCE_AVAILABILITY_SCORE">_resourceAvailabilityScore</field>
+    </fields>
+
+    <deprecatedFields>
+        <field key="DEPRECATED_LANGUAGE">language</field>
+    </deprecatedFields>
+
+    <!-- This defines the availability levels shown in the web app and their 
+    display values and descriptions Descriptions are shown on the record page 
+    and as tooltip in the availability facet. Values have been adapted from <https://www.clarin.eu/content/license-categories>. -->
+    <availability>
+        <availabilityValue value="PUB">
+            <displayValue>Public</displayValue>
+            <description>PÜB language resources can be distributed püblicly. The
+                distribution of these materials is not restricted by copyright or
+                personal data protection issues.</description>
+        </availabilityValue>
+        <availabilityValue value="ACA">
+            <displayValue>Academic</displayValue>
+            <description>ACA language resources can be accessed only for research
+                purposes. The end-user does not need to ask for usage permission but
+                can access the resources via e.g. federated login.</description>
+        </availabilityValue>
+        <availabilityValue value="RES">
+            <displayValue>Restricted for individual</displayValue>
+            <description>RES language resources have additional restrictions,
+                which require permission from the rights holder. These resources
+                may contain material whose usage is limited due to copyright
+                and/or personal data protection issues.</description>
+        </availabilityValue>
+        <availabilityValue value="UNSPECIFIED">
+            <displayValue>Unspecified</displayValue>
+            <description>No specification of availability (contact the original
+                provider)</description>
+        </availabilityValue>
+    </availability>
+
+    <countryComponentUrl>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/components/clarin.eu:cr1:c_1271859438104/xml</countryComponentUrl>
+
+    <languageLinkTemplate>https://infra.clarin.eu/content/language_info/data/{}.html</languageLinkTemplate>
+
+    <feedbackFromUrl>http://www.clarin.eu/node/3759?url=</feedbackFromUrl>
+
+    <language2LetterCodeComponentUrl>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/components/clarin.eu:cr1:c_1271859438109/xml</language2LetterCodeComponentUrl>
+
+    <language3LetterCodeComponentUrl>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/components/clarin.eu:cr1:c_1271859438110/xml</language3LetterCodeComponentUrl>
+
+    <silToISO639CodesUrl>https://infra.clarin.eu/CMDI/1.1/xslt/sil_to_iso6393.xml</silToISO639CodesUrl>
+
+    <FederatedContentSearchUrl>http://weblicht.sfs.uni-tuebingen.de/Aggregator/</FederatedContentSearchUrl>
+
+    <cqlEndpointFilter>http://cqlservlet.mpi.nl/</cqlEndpointFilter>
+
+    <cqlEndpointAlternative>http://cqlservlet.mpi.nl/</cqlEndpointAlternative>
+
+    <!-- Set to -1 to disable virtual collection creation from VLO -->
+    <vcrMaximumItemsCount>1000</vcrMaximumItemsCount>
+
+<!--     <vcrSubmitEndpoint>https://collections.clarin-dev.eu/submit/extensional</vcrSubmitEndpoint> -->
+    <vcrSubmitEndpoint>https://beta-collections.clarin.eu/submit/extensional</vcrSubmitEndpoint>
+    
+
+    <centreRegistryCentresListJsonUrl>https://centres.clarin.eu/api/model/Centre</centreRegistryCentresListJsonUrl>
+
+    <centreRegistryOaiPmhEndpointsListJsonUrl>https://centres.clarin.eu/api/model/OAIPMHEndpoint</centreRegistryOaiPmhEndpointsListJsonUrl>
+
+    <lrSwitchboardBaseUrl>https://beta-switchboard.clarin.eu/</lrSwitchboardBaseUrl>
+
+    <lrSwitchboardPopupScriptUrl>https://beta-switchboard.clarin.eu/popup/switchboardpopup.js</lrSwitchboardPopupScriptUrl>
+
+<!-- 
+    <lrSwitchboardBaseUrl>https://switchboard.clarin-dev.eu/switchboard-test/</lrSwitchboardBaseUrl>
+
+    <lrSwitchboardPopupScriptUrl>https://switchboard.clarin-dev.eu/switchboard-test/popup/switchboardpopup.js</lrSwitchboardPopupScriptUrl>
+ -->
+
+    <lrSwitchboardPopupEnabled>true</lrSwitchboardPopupEnabled>
+
+<!-- 	<linkCheckerDbConnectionString>jdbc:mysql://localhost:3307/stormychecker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useLocalSessionState=true&amp;rewriteBatchedStatements=true</linkCheckerDbConnectionString> -->
+<!--     <linkCheckerDbConnectionString>jdbc:mysql://localhost:3306/linkchecker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useLocalSessionState=true&amp;rewriteBatchedStatements=true</linkCheckerDbConnectionString> -->
+<!--  <linkCheckerDbUser>root</linkCheckerDbUser> -->
+<!--     <linkCheckerDbPassword>Aipiel7u</linkCheckerDbPassword> -->
+   
+   	<!-- hetzner-vps2 via tunnel -->
+<!-- 
+	<linkCheckerDbConnectionString>jdbc:mariadb://127.0.0.1:3306/linkchecker</linkCheckerDbConnectionString>
+    <linkCheckerDbUser>linkcheckerUser</linkCheckerDbUser>
+    <linkCheckerDbPassword>Aejo6ooh</linkCheckerDbPassword>
+ -->
+    <linkCheckerDbPoolsize>20</linkCheckerDbPoolsize>
+    <linkCheckerMaxDaysSinceChecked>50</linkCheckerMaxDaysSinceChecked>
+
+
+	<webAppLocale>en-GB</webAppLocale>
+
+	<otherProvidersMarkupFile>/Users/twagoo/vlo/ContributorsPageOtherDefault.html</otherProvidersMarkupFile>
+
+    <!-- makes the score for the result ranking visible in the search results -->
+    <showResultScores>false</showResultScores>
+
+    <processHierarchies>true</processHierarchies>
+
+    <enableFcsLinks>false</enableFcsLinks>
+
+    <!-- fields that are used to generate a document signature to identify duplicates -->
+    <signatureFields>
+        <signatureField>LANGUAGE_CODE</signatureField>
+        <signatureField>NAME</signatureField>
+    </signatureFields>
+
+    <dataSetStructuredData>
+        <enabled>true</enabled>
+        <include field="HARVESTER_ROOT">*</include>
+        <exclude field="COLLECTION">Bavarian Archive for Speech Signals (BAS)</exclude>
+    </dataSetStructuredData>
+
+</VloConfig>
