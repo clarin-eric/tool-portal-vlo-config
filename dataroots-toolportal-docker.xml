@@ -1,0 +1,28 @@
+<dataRoots>
+
+	<DataRoot>
+		<originName>Language Resource Switchboard</originName>
+		<rootFile>/srv/vlo-data/Switchboard</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
+	</DataRoot>
+	
+	<DataRoot>
+		<originName>CSD Tools</originName>
+		<rootFile>/srv/vlo-data/CSD_TOOLS</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
+	</DataRoot>
+	
+	<DataRoot>
+		<originName>DSpace</originName>
+		<rootFile>/srv/vlo-data/DSpace</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
+	</DataRoot>
+
+	
+</dataRoots>
