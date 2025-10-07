@@ -1,7 +1,7 @@
 <VloConfig>
 	<!-- VLO configuration for tool portal -->
    
-    <deleteAllFirst>false</deleteAllFirst>
+    <deleteAllFirst>true</deleteAllFirst>
     
     <maxDaysInSolr>100</maxDaysInSolr>
 
@@ -11,20 +11,27 @@
     <solrUserReadOnlyPass>docker_secret</solrUserReadOnlyPass>
 
     <!-- Local -->
+<!-- 
     <solrUrl>http://localhost:8183/solr/vlo-index/</solrUrl>
     <solrUserReadWrite>docker_user_rw</solrUserReadWrite>
     <solrUserReadWritePass>docker_secret</solrUserReadWritePass>
- 
+ -->
  	<!-- End local -->
+ 	
+    <!-- Docker (compose_tool-portal) -->
+    <solrUrl>http://localhost:8983/solr/vlo-index/</solrUrl>
+    <solrUserReadWrite>docker_user_rw</solrUserReadWrite>
+    <solrUserReadWritePass>secret_read_write</solrUserReadWritePass> 
+
+
+    <!-- End Docker -->
  
 	 <!-- Alpha -->
-   
 <!-- 
     <solrUrl>https://alpha-vlo.clarin.eu/solr/vlo-index/</solrUrl>
     <solrUserReadWrite>user_admin</solrUserReadWrite>
     <solrUserReadWritePass>4dm1n_s0_s3cr3t</solrUserReadWritePass>
  -->
-
 	<!-- End alpha -->
     
     <homeUrl>http://www.clarin.eu/vlo</homeUrl>
@@ -58,9 +65,9 @@
     <printMapping>false</printMapping>
 
     <!-- leave empty to use default packaged definition -->
-    <facetConceptsFile>file:/Users/twagoo/git/VLO-mapping/mapping/facetConcepts.xml</facetConceptsFile>
+    <facetConceptsFile>file:VLO-mapping/mapping/facetConcepts.xml</facetConceptsFile>
     
-    <facetsConfigFile>file:/Users/twagoo/git/VLO-mapping/config/facetsConfiguration.xml</facetsConfigFile>
+    <facetsConfigFile>file:VLO-mapping/config/facetsConfiguration.xml</facetsConfigFile>
 <!--    <facetsConfigFile>file:/Users/twagoo/vlo/facetsConfiguration.xml</facetsConfigFile> -->
 
     <profileSchemaUrl>https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/profiles/{PROFILE_ID}/xsd</profileSchemaUrl>
@@ -73,24 +80,24 @@
 
     <vocabularyRegistryUrl>http://clavas.clarin.eu/clavas/public/api/find-concepts</vocabularyRegistryUrl>
 
-    <nationalProjectMapping>file:/Users/twagoo/git/VLO-mapping/uniform-maps/nationalProjectsMapping.xml</nationalProjectMapping>
+    <nationalProjectMapping>file:VLO-mapping/uniform-maps/nationalProjectsMapping.xml</nationalProjectMapping>
     
-    <organisationNamesUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/OrganisationControlledVocabulary.xml</organisationNamesUrl>
+    <organisationNamesUrl>file:VLO-mapping/uniform-maps/OrganisationControlledVocabulary.xml</organisationNamesUrl>
     
-    <languageNameVariantsUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LanguageNameVariantsMap.xml</languageNameVariantsUrl>
+    <languageNameVariantsUrl>file:VLO-mapping/uniform-maps/LanguageNameVariantsMap.xml</languageNameVariantsUrl>
     
-    <licenseAvailabilityMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseAvailabilityMap.xml</licenseAvailabilityMapUrl>
+    <licenseAvailabilityMapUrl>file:VLO-mapping/uniform-maps/LicenseAvailabilityMap.xml</licenseAvailabilityMapUrl>
     
-    <resourceClassMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/resourceTypeMap.xml</resourceClassMapUrl>
+    <resourceClassMapUrl>file:VLO-mapping/uniform-maps/resourceTypeMap.xml</resourceClassMapUrl>
     
-    <licenseURIMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseURIMap.xml</licenseURIMapUrl>   
+    <licenseURIMapUrl>file:VLO-mapping/uniform-maps/LicenseURIMap.xml</licenseURIMapUrl>   
 
-    <licenseTypeMapUrl>file:/Users/twagoo/git/VLO-mapping/uniform-maps/LicenseTypeMap.xml</licenseTypeMapUrl>   
+    <licenseTypeMapUrl>file:VLO-mapping/uniform-maps/LicenseTypeMap.xml</licenseTypeMapUrl>   
 
-    <crossFacetMapUrl>file:/Users/twagoo/git/VLO-mapping/mapping/cfm/CrossFacetMappings.xml</crossFacetMapUrl> <!-- bundled resource: /uniform-maps/CrossFacetMap.xml -->
+    <crossFacetMapUrl>file:VLO-mapping/mapping/cfm/CrossFacetMappings.xml</crossFacetMapUrl> <!-- bundled resource: /uniform-maps/CrossFacetMap.xml -->
 
 <!--     <valueMappingsFile>file:/Users/twagoo/git/VLO-mapping/value-maps/dist/master.xml</valueMappingsFile> -->
-    <valueMappingsFile>/vlo-mapping/value-maps/dist/master.xml</valueMappingsFile>
+    <valueMappingsFile>file:VLO-mapping/value-maps/dist/master.xml</valueMappingsFile>
 
     <fields>
         <field key="NAME">name</field>

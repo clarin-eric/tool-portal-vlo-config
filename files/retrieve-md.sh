@@ -2,18 +2,18 @@
 DSPACE_URL_FILE="$(pwd)/urls-dspace.txt"
 CSD_URL_FILE="$(pwd)/urls-csd.txt"
 
-mkdir -p 'DSpace'
+mkdir -p 'DSpace/records'
 (
-	cd 'DSPace'
+	cd 'DSPace/records'
 	while read URL; do
 		wget "${URL}"
 		sleep .5
 	done < "${DSPACE_URL_FILE}"
 )
 
-mkdir -p 'CSD_TOOLS'
+mkdir -p 'CSD_TOOLS/records'
 (
-	cd 'CSD_TOOLS'
+	cd 'CSD_TOOLS/records'
 	while read URL; do
 		wget "${URL}"
 		sleep .5

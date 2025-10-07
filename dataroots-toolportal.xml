@@ -1,36 +1,30 @@
 <dataRoots>
+
 	<DataRoot>
-		<originName>Small test set</originName>
-		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files</rootFile>            
+		<originName>Language Resource Switchboard</originName>
+		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/Switchboard</rootFile>            
 		<prefix>file://</prefix>
 		<tostrip></tostrip>
 		<deleteFirst>true</deleteFirst>
 	</DataRoot>
 	
-<!--
+	
+	
 	<DataRoot>
-		<originName>CLARIN</originName>
-		<rootFile>/Users/twan/vlo/files/clarin/results/cmdi/</rootFile>            
-		<prefix>file:/</prefix>
-		<tostrip>/</tostrip>
-		<deleteFirst>false</deleteFirst>
+		<originName>CSD Tools</originName>
+		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/CSD_TOOLS</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
 	</DataRoot>
 	
--->
-<!--
 	<DataRoot>
-		<originName>Clarin</originName>
-		<rootFile>/lat/apache/htdocs/oai-harvester/cmdi-providers/harvested/results/cmdi/</rootFile>            
-		<prefix>http://catalog.clarin.eu/</prefix>
-		<tostrip>/lat/apache/htdocs/</tostrip>
-		<deleteFirst>false</deleteFirst>
+		<originName>DSpace</originName>
+		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/DSpace</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
 	</DataRoot>
-	<DataRoot>
-		<originName>Other</originName>
-		<rootFile>/lat/apache/htdocs/oai-harvester/olac-and-dc-providers/harvested/results/cmdi/</rootFile>            
-		<prefix>http://catalog.clarin.eu/</prefix>
-		<tostrip>/lat/apache/htdocs/</tostrip>
-		<deleteFirst>false</deleteFirst>
-	</DataRoot>
-	-->
+
+	
 </dataRoots>
