@@ -25,20 +25,10 @@
     
     <facet name="resourceClass">
         <displayAs>primaryFacet</displayAs>
-        <description>The type of the resource</description>
-        <definition>The type of the resource</definition>
-    </facet>
-    
-    <facet name="toolType">
-        <displayAs>primaryFacet</displayAs>
-        <description>The type tool</description>
-        <definition>The type of the tool</definition>
-    </facet>
-    
-    <facet name="task">
-        <displayAs>primaryFacet</displayAs>
-        <description>The type of task supported by the tool</description>
-        <definition>The type of task supported by the tool</definition>
+        <description>The type of the resource or tool (e.g. corpus, lexicon, grammar,
+            tool...)</description>
+        <definition>The type of the resource or tool (e.g. corpus, lexicon, grammar,
+            tool...).</definition>
     </facet>
     
     <facet name="keywords">
