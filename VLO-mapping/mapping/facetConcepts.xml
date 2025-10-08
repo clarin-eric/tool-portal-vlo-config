@@ -570,7 +570,12 @@
 	<facetConcept name="resourceClass">
 
 		<!-- Tool profile -->
-		<pattern>//cmdp:ToolServiceType/cmdp:label/text()</pattern>
+		<pattern>//cmdp:ResourceType/cmdp:identifier/text()</pattern>
+		<pattern>//cmdp:ResourceType/cmdp:label/text()</pattern>
+
+		<!-- GenericToolService components -->
+		<pattern>//cmdp:ToolInfo/cmdp:ToolServiceType/cmdp:identifier/text()</pattern>
+		<pattern>//cmdp:ToolInfo/cmdp:ToolServiceType/cmdp:label/text()</pattern>
 
 		<concept>http://purl.org/dc/terms/type</concept>
 		<concept>http://purl.org/dc/elements/1.1/type</concept>
@@ -700,6 +705,18 @@
 
 		<!-- HZSK CommunicationProfile, values like "Barbara", "Mother of Barbara" etc. -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:CommunicationProfile/cmdp:SpeakerInfo/cmdp:ActorPersonal/cmdp:Pseudonym</blacklistPattern>
+	</facetConcept>
+	
+	<facetConcept name="toolType">
+		<!-- GenericToolService components -->
+		<pattern>//cmdp:ToolInfo/cmdp:ToolServiceType/cmdp:identifier/text()</pattern>
+		<pattern>//cmdp:ToolInfo/cmdp:ToolServiceType/cmdp:label/text()</pattern>
+	</facetConcept>
+
+	<facetConcept name="task">
+		<!-- GenericToolService components -->
+		<pattern>//cmdp:ToolInfo/cmdp:TaskType/cmdp:identifier/text()</pattern>
+		<pattern>//cmdp:ToolInfo/cmdp:TaskType/cmdp:label/text()</pattern>
 	</facetConcept>
 
 	<!-- 
