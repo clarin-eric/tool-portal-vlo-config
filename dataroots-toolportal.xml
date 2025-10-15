@@ -2,13 +2,20 @@
 
 	<DataRoot>
 		<originName>Language Resource Switchboard</originName>
-		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/Switchboard</rootFile>            
+		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/switchboard/dev</rootFile>            
 		<prefix>file://</prefix>
 		<tostrip></tostrip>
 		<deleteFirst>true</deleteFirst>
 	</DataRoot>
 	
 	
+	<DataRoot>
+		<originName>CLARIAH Tool Portal</originName>
+		<rootFile>/Users/twagoo/git/tool-portal-vlo-config/files/codemeta/dev</rootFile>            
+		<prefix>file://</prefix>
+		<tostrip></tostrip>
+		<deleteFirst>true</deleteFirst>
+	</DataRoot>
 	
 	<DataRoot>
 		<originName>CSD Tools</originName>
