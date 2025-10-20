@@ -31,6 +31,18 @@
             tool...).</definition>
     </facet>
     
+    <facet name="toolType">
+        <displayAs>primaryFacet</displayAs>
+        <description>Type of tool or service</description>
+        <definition>Type of tool or service</definition>
+    </facet>
+    
+    <facet name="task">
+        <displayAs>primaryFacet</displayAs>
+        <description>Tasks supported by the tool or service</description>
+        <definition>Tasks supported by the tool or service</definition>
+    </facet>
+    
     <facet name="keywords">
         <displayAs>primaryFacet</displayAs>
         <description>Keywords describing the resource or tool</description>

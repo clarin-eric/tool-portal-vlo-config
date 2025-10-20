@@ -1,0 +1,3 @@
+<def>
+    <target-facet name="toolType" removeSourceValue="true" overrideExistingValues="true"/>
+</def>
