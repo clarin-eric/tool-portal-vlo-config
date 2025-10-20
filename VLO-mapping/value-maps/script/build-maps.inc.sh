@@ -12,6 +12,6 @@
 #			built, provide 'mymap'
 #
 
-vlo_mapping -t=dist/toolportal_resourceClass_template.xml toolportal_profile-resourceClass
-vlo_mapping toolportal_profile-resourceClass
+vlo_mapping -t=dist/toolportal_resourceClass_profile_template.xml toolportal_profile-resourceClass
+vlo_mapping -t=dist/toolportal_resourceClass_template.xml toolportal_resourceClass
 vlo_mapping -t=dist/toolportal_collection_template.xml toolportal_collection
