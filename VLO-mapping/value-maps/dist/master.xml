@@ -7,27 +7,17 @@
 
 	<!-- `_componentProfile` to `resourceClass` -->
 	<xi:include 
-		href="profileName2resourceClass_tf-extended_noResourceClassProfiles.xml" 
+		href="toolportal_profile-resourceClass.xml" 
 	  	xpointer="element(/1/1)" />
 
 	<!-- `resourceClass` to `resourceClass` -->
 	<xi:include 
-		href="resourceClass_tf-extended.xml" 
+		href="toolportal_resourceClass.xml" 
 	  	xpointer="element(/1/1)" />
 	  	
 	<!-- `collection` to `collection` -->
 	<xi:include 
-		href="collection.xml" 
+		href="toolportal_collection.xml" 
 		xpointer="element(/1/1)" />
-
-	<!-- `creator` to `creator` -->
-        <xi:include
-                href="creator.xml"
-                xpointer="element(/1/1)" />
-
-	<!-- `subject` to `subject` -->
-        <xi:include
-                href="subject.xml"
-                xpointer="element(/1/1)" />
 
 </value-mappings>
