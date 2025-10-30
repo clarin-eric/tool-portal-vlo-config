@@ -25,12 +25,15 @@
 		href="toolportal_keywords-task.xml" 
 	  	xpointer="element(/1/1)" />
 
-
 	<!-- `task` to `task` -->
 	<xi:include 
 		href="toolportal_task.xml" 
 	  	xpointer="element(/1/1)" />
 
+	<!-- `fieldOfStudy` to `fieldOfStudy` -->
+	<xi:include 
+		href="toolportal_fieldOfStudy.xml" 
+	  	xpointer="element(/1/1)" />
 	  		  	
 	<!-- `collection` to `collection` -->
 	<xi:include 

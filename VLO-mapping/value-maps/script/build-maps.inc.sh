@@ -18,3 +18,4 @@ vlo_mapping -t=dist/toolportal_collection_template.xml toolportal_collection
 vlo_mapping -t=dist/toolportal_toolType_template.xml toolportal_toolType
 vlo_mapping -t=dist/toolportal_keywords_task_template.xml toolportal_keywords-task
 vlo_mapping -t=dist/toolportal_task_template.xml toolportal_task
+vlo_mapping -t=dist/toolportal_fieldOfStudy_template.xml toolportal_fieldOfStudy

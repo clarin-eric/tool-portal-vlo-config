@@ -720,7 +720,6 @@
 	</facetConcept>
 	
 	<facetConcept name="fieldOfStudy">
-		<!-- GenericToolService components -->
 		<concept>http://wikidata.org/entity/Q1047113</concept>
 	</facetConcept>
 
