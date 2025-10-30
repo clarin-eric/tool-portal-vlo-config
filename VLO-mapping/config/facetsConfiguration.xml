@@ -59,6 +59,13 @@
             speech recordings made.</definition>
     </facet>
     
+    <facet name="fieldOfStudy">
+        <displayAs>primaryFacet</displayAs>
+        <displayAs>searchResultField</displayAs>
+        <description>The field of study (discipline, subject area) that the tool relates to</description>
+        <definition>Field limited to a specific area of knowledge; specialization in an occupation or branch of learning; a specific use</definition>
+    </facet>
+    
     <facet name="organisation">
         <displayAs>secondaryFacet</displayAs>
         <displayAs>searchResultField</displayAs>

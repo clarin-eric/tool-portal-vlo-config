@@ -718,6 +718,11 @@
 		<pattern>//cmdp:ToolInfo/cmdp:TaskType/cmdp:identifier/text()</pattern>
 		<pattern>//cmdp:ToolInfo/cmdp:TaskType/cmdp:label/text()</pattern>
 	</facetConcept>
+	
+	<facetConcept name="fieldOfStudy">
+		<!-- GenericToolService components -->
+		<concept>http://wikidata.org/entity/Q1047113</concept>
+	</facetConcept>
 
 	<!-- 
 
