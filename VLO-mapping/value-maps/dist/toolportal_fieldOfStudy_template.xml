@@ -1,4 +1,5 @@
 <def>
     <target-facet name="fieldOfStudy" removeSourceValue="true" overrideExistingValues="false"/>
     <target-facet name="task" removeSourceValue="false" overrideExistingValues="false"/>
+    <target-facet name="toolType" removeSourceValue="false" overrideExistingValues="false"/>
 </def>
